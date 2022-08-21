@@ -1,8 +1,8 @@
-package com.crm.crm_izvestaji.api.rpa.excel;
+package com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.excel;
 
-import com.crm.crm_izvestaji.api.rpa.dto.StatusLogDto;
-import com.crm.crm_izvestaji.api.rpa.model.Log_FileModel;
-import com.crm.crm_izvestaji.api.rpa.repository.RPA_RobotRepo;
+import com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.dto.StatusLogDto;
+import com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.model.Log_FileModel;
+import com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.repository.RPA_RobotRepo;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFFont;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -14,7 +14,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-import static com.crm.crm_izvestaji.api.rpa.service.GlobalServiceImpl.*;
+import static com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.service.GlobalServiceImpl.*;
 
 // Klasa za generisanje Excel fajla, podacima koji se dobijaju iz RPA_RobotRepo repozitorijuma
 @Service
@@ -28,7 +28,7 @@ public class GenerateExcel {
         this.rpa_robotRepo = rpa_robotRepo;
     }
 
-    public String generateExcel (List<Log_FileModel> logFileDtoList, List<StatusLogDto> statusLogDtoList, String sysdate) throws IOException {
+    public String generateExcel (List<Log_FileModel> logFileDtoList, List<StatusLogDto> statusLogDtoList, String sysdate) {
 
         String filename = getFilename(sysdate);
         String fileLocation = getFileLocation(filename);

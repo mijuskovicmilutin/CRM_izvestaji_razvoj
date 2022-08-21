@@ -1,4 +1,4 @@
-package com.crm.crm_izvestaji.users.dto;
+package com.telekomsrbija.ws.crm.crm_izvestaji.users.dto;
 
 import java.io.Serializable;
 

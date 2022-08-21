@@ -1,5 +1,6 @@
-package com.crm.crm_izvestaji.api.rpa.schedule;
+package com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.schedule;
 
+import com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.service.GlobalServiceImpl;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -8,8 +9,6 @@ import org.springframework.scheduling.annotation.Scheduled;
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
-
-import static com.crm.crm_izvestaji.api.rpa.service.GlobalServiceImpl.DIRECTORY_PATH;
 
 @Configuration
 @EnableScheduling
@@ -22,7 +21,7 @@ public class ScheduleJobConfig {
     @Scheduled(cron = "00 57 09 * * *")
     public void deleteOldFiles() throws InterruptedException, IOException {
 
-        File targetDir = new File(DIRECTORY_PATH);
+        File targetDir = new File(GlobalServiceImpl.DIRECTORY_PATH);
         if (targetDir.exists()){
             for (File file : targetDir.listFiles()){
                 Long oldFiles = new Date().getTime() - file.lastModified();

@@ -1,7 +1,7 @@
-package com.crm.crm_izvestaji.api.rpa.repository;
+package com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.repository;
 
-import com.crm.crm_izvestaji.api.rpa.dto.StatusLogDto;
-import com.crm.crm_izvestaji.api.rpa.model.Log_FileModel;
+import com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.dto.StatusLogDto;
+import com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.model.Log_FileModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

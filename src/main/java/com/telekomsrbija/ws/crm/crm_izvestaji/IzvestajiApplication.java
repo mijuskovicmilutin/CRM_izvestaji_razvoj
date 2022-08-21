@@ -1,4 +1,4 @@
-package com.crm.crm_izvestaji;
+package com.telekomsrbija.ws.crm.crm_izvestaji;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

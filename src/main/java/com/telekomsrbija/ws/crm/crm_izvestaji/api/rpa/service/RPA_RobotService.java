@@ -1,4 +1,4 @@
-package com.crm.crm_izvestaji.api.rpa.service;
+package com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.service;
 
 import javax.mail.MessagingException;
 

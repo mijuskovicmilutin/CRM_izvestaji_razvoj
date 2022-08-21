@@ -1,7 +1,7 @@
-package com.crm.crm_izvestaji.users.service;
+package com.telekomsrbija.ws.crm.crm_izvestaji.users.service;
 
-import com.crm.crm_izvestaji.users.dto.UserDtoImpl;
-import com.crm.crm_izvestaji.users.repo.UserRepo;;
+import com.telekomsrbija.ws.crm.crm_izvestaji.users.dto.UserDtoImpl;
+import com.telekomsrbija.ws.crm.crm_izvestaji.users.repo.UserRepo;;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;

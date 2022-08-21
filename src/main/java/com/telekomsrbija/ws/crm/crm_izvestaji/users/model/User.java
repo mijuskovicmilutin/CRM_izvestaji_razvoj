@@ -16,4 +16,5 @@ public class User {
     private String position;
     private String employment;
     private String address;
-    private String 
+    private String phoneNumber;
+}

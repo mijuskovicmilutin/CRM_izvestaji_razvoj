@@ -1,6 +1,7 @@
-package com.crm.crm_izvestaji.api.rpa.mailsender;
+package com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.mailsender;
 
-import com.crm.crm_izvestaji.users.service.UserServiceImpl;
+import com.telekomsrbija.ws.crm.crm_izvestaji.users.service.UserServiceImpl;
+import com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.service.GlobalServiceImpl;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -12,8 +13,6 @@ import javax.transaction.Transactional;
 import java.io.File;
 import java.util.Arrays;
 import java.util.Iterator;
-
-import static com.crm.crm_izvestaji.api.rpa.service.GlobalServiceImpl.getFileLocation;
 
 @Service
 @Transactional
@@ -49,7 +48,7 @@ public class MailSenderService {
 
         Iterator<String> attachment = Arrays.stream(attachments).iterator();
         while (attachment.hasNext()){
-            String fileLocation = getFileLocation(attachment.next());
+            String fileLocation = GlobalServiceImpl.getFileLocation(attachment.next());
             FileSystemResource fileSystemResource = new FileSystemResource(new File(fileLocation));
             mimeMessageHelper.addAttachment(fileSystemResource.getFilename(), fileSystemResource);
         }

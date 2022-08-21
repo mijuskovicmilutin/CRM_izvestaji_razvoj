@@ -4,4 +4,6 @@ package com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.excel;
 public enum HeaderValuesStatusLog {
 
     BUTTON,
-    STATUS_OBRADE
+    STATUS_OBRADE,
+    COUNT
+}

@@ -1,4 +1,4 @@
-package com.crm.crm_izvestaji.api.rpa.model;
+package com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.model;
 
 import lombok.Getter;
 

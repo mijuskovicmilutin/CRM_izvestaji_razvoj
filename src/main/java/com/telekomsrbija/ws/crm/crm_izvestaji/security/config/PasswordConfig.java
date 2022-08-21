@@ -1,4 +1,4 @@
-package com.crm.crm_izvestaji.security.config;
+package com.telekomsrbija.ws.crm.crm_izvestaji.security.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

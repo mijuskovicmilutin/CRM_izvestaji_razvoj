@@ -8,8 +8,8 @@
 		<version>2.6.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.crm</groupId>
-	<artifactId>izvestaji</artifactId>
+	<groupId>com.telekomsrbija.ws.crm</groupId>
+	<artifactId>crm_izvestaji</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>CRM_Izvestaji</name>
 	<description>CRM_Izvestaji</description>

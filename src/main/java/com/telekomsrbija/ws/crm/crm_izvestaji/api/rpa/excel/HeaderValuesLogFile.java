@@ -1,4 +1,4 @@
-package com.crm.crm_izvestaji.api.rpa.excel;
+package com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.excel;
 
 /* Nazivi kolona za Sheet LogFile u Excel fajlu */
 public enum HeaderValuesLogFile {
