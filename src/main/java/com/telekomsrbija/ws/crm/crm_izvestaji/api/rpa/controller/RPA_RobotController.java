@@ -41,7 +41,8 @@ public class RPA_RobotController {
     @PostMapping ("/excel/generate")
     public ResponseEntity<?> generateExcel (@Valid @RequestBody GenerateExcelDto generateExcelDto) {
         String filename = rpaRobotService.rpa_robotGenerateExcel(generateExcelDto.getSysdate());
-        return new ResponseEntity<>(CustomResponseEntity.generateResponse(HttpStatus.OK, filename), HttpStatus.OK);
+        return CustomResponseEntity.generateResponse(HttpStatus.OK, filename);
+        //return new ResponseEntity<>(CustomResponseEntity.generateResponse(HttpStatus.OK, filename), HttpStatus.OK);
     }
 
     /* Post metoda za download generisanog Excel fajla
@@ -74,6 +75,7 @@ public class RPA_RobotController {
                                               sendingEmailDto.getBody(),
                                               sendingEmailDto.getSubject(),
                                               sendingEmailDto.getAttachments());
-        return new ResponseEntity<>(CustomResponseEntity.generateResponse(HttpStatus.OK, "Uspesno poslat email."), HttpStatus.OK);
+        return CustomResponseEntity.generateResponse(HttpStatus.OK, "Uspesno poslat email.");
+        //return new ResponseEntity<>(CustomResponseEntity.generateResponse(HttpStatus.OK, "Uspesno poslat email."), HttpStatus.OK);
     }
 }

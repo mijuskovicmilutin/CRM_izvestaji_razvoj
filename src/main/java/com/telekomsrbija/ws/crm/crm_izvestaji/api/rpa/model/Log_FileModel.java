@@ -1,6 +1,7 @@
 package com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.model;
 
 import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,6 +12,7 @@ import java.time.LocalDateTime;
 @Entity
 @Table (schema = "bpc", name = "log_file")
 @Getter
+@Setter
 public class Log_FileModel {
 
     @Id
