@@ -2,6 +2,7 @@ package com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.repository;
 
 import com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.dto.StatusLogDto;
 import com.telekomsrbija.ws.crm.crm_izvestaji.api.rpa.model.Log_FileModel;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.ResultSetExtractor;
@@ -18,7 +19,7 @@ public class RpaRobotRepoImpl implements RpaRobotRepo{
 
     private final JdbcTemplate jdbcTemplate;
 
-    public RpaRobotRepoImpl(JdbcTemplate jdbcTemplate) {
+    public RpaRobotRepoImpl(@Qualifier("oracleBpcJdbcTemplate")JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
 
